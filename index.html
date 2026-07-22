@@ -115,6 +115,29 @@
     text-transform: uppercase;
   }
 
+  .links {
+    margin-top: 1.6rem;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 1.5s;
+  }
+
+  .links a {
+    font-size: 0.7rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--dim);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: color 0.25s ease, border-color 0.25s ease;
+  }
+
+  .links a:hover,
+  .links a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
   footer {
     position: fixed;
     bottom: 2rem;
@@ -170,7 +193,7 @@
       <span class="word">DelMonico</span>
     </h1>
     <div class="rule"></div>
-    <p class="initials">Welcome</p>
+    <p class="links"><a href="https://www.linkedin.com/in/justin-delmonico" target="_blank" rel="noopener">LinkedIn</a></p>
   </main>
 
   <footer>&copy; <span id="year"></span> Justin C. DelMonico</footer>
